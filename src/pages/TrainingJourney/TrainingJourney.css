@@ -1,12 +1,12 @@
+/* Estilos gerais */
 .training-journey {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   overflow: auto;
   position: fixed;
-  justify-content: space-between;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.0);
 }
@@ -32,14 +32,13 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Ajuste a altura conforme necessário */
+    transform: translateY(-10px);
   }
 }
 
 .character {
   animation: float 2s ease-in-out infinite;
 }
-
 
 .stage {
   text-align: center;
@@ -53,13 +52,12 @@
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.6);;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   width: 100vw;
   padding: 22px;
   display: flex;
   align-items: center;
-  height: 1vw;
 }
 
 .menu {
@@ -104,4 +102,61 @@
 
 .dropdown-menu button:hover {
   background-color: var(--bluesky);
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* Reduz o tamanho da fonte em tablets e dispositivos menores */
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .journey-container {
+    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+    align-items: center;
+  }
+
+  .stage-icon {
+    width: 80px; /* Reduz o tamanho dos ícones em telas menores */
+    height: 80px;
+  }
+
+  .stage {
+    margin: 10px; /* Reduz a margem entre os estágios */
+  }
+
+  .header {
+    padding: 15px; /* Reduz o padding da barra superior em dispositivos menores */
+  }
+
+  .menu-icon {
+    font-size: 28px; /* Diminui o tamanho do ícone do menu */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte em smartphones */
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .stage-icon {
+    width: 70px; /* Reduz o tamanho dos ícones para smartphones */
+    height: 70px;
+  }
+
+  .header {
+    padding: 10px; /* Menor padding na barra superior para smartphones */
+  }
+
+  .menu-icon {
+    font-size: 24px; /* Reduz o tamanho do ícone do menu para smartphones */
+  }
+
+  .dropdown-menu button {
+    font-size: 14px; /* Reduz o tamanho da fonte dos botões do menu */
+    padding: 8px 15px;
+  }
 }

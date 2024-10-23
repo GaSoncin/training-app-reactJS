@@ -1,8 +1,22 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 250px;
+  width: 200px; /* Ajustado para dispositivos móveis */
   height: auto;
 }
 
@@ -10,16 +24,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100vh;
   justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  overflow: hidden; /* Impede o conteúdo de ultrapassar os limites da tela */
 }
 
 .login-container {
-  width: 400px;
-  height: 250px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 400px; /* Limita o tamanho máximo */
   padding: 30px;
+  margin: auto;
   border: 1px solid #ccc;
   border-radius: 42px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,8 +71,10 @@
 
 .input-group input {
   width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
+  padding: 12px; /* Aumentado o padding para facilitar o toque em dispositivos móveis */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: transparent;
   color: #fff;
 }
 
@@ -75,13 +93,6 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],
-input[type="password"] {
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  background-color: transparent;
-}
-
 .eye-icon {
   position: absolute;
   right: 10px;
@@ -90,4 +101,43 @@ input[type="password"] {
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%; /* Ajusta a largura para quase toda a tela */
+    padding: 20px;
+  }
+
+  .login-container h1 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h1 {
+    font-size: 24px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .eye-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  button {
+    padding: 8px;
+  }
 }

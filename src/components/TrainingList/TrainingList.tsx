@@ -5,12 +5,12 @@ import certificadoImg from "../../assets/certificado.jpg"; // Certifique-se de q
 
 const trainings = [
   { title: "Treinamento de produção", date: "21/10/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
-  { title: "Treinamento em segurança", date: "15/09/2022" },
+  { title: "Treinamento de liderança", date: "11/09/2022" },
+  { title: "Treinamento em vendas", date: "10/05/2022" },
+  { title: "Treinamento de ti", date: "23/03/2022" },
+  { title: "Treinamento em gestão", date: "04/01/2022" },
+  { title: "Treinamento de ética", date: "08/12/2021" },
+  { title: "Treinamento em segurança", date: "24/10/2021" },
 ];
 
 const TrainingList: React.FC = () => {

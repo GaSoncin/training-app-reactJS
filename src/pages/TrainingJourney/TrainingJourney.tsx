@@ -74,7 +74,7 @@ const TrainingJourney: React.FC = () => {
           onClick={moveRight}
           disabled={currentPosition === stages.length - 1}
         >
-          Modulo Conluido
+          Modulo Concluído
         </button>
       </div>
     </div>

@@ -44,7 +44,7 @@ const IApage: React.FC = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "lmstudio-community/gemma-2-2b-it-GGUF/gemma-2-2b-it-Q4_K_M.gguf",
+          model: "llmstudio-community/Llama-3.2-3B-Instruct-GGUF/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
           messages: messages,
         }),
       });

@@ -60,7 +60,7 @@ const TrainingPage: React.FC = () => {
       </div>
       <div className="training-list-container">
         <TrainingList />
-        {data ? <p>{data.mensagem}</p> : <p>Carregando dados do back-end...</p>}
+       
       </div>
     </div>
   );
